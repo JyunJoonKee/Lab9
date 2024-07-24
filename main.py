@@ -19,8 +19,3 @@ def decode(password):
             sub=sub+10
         substring= substring+str(sub)
     return substring
-
-print(encode('12345555'))
-print(encode('00009962'))
-print (decode('45678888'))
-print(decode('33332295'))
