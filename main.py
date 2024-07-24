@@ -5,7 +5,7 @@ def encode(password):
     listofnumbers = list(password)
     for nums in range(len(listofnumbers)):
         addnum = int(listofnumbers[nums]) + 3
-        if addnum>+10:
+        if addnum>=10:
             addnum=addnum-10
         threestring += str(addnum)
     return threestring
