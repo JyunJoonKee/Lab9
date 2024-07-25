@@ -19,3 +19,22 @@ def decode(password):
             sub=sub+10
         substring= substring+str(sub)
     return substring
+
+def main():
+    while True:
+        print("\nMenu\n"
+              "-------------\n"
+              "1. Encode\n"
+              "2. Decode\n"
+              "3. Quit")
+        selection = int(input("\nPlease enter an option: "))
+        if selection == 3:
+            exit()
+        elif selection == 1:
+            encodeline = input("Please enter the password to encode: ")
+            encodedpassword = encode(encodeline)
+            print("Your password has been encoded and stored!")
+        elif selection == 2:
+            print(f"The encoded password is {decode(encodedpassword)}, and the original password is {encodeline}.")
+if __name__ == "__main__":
+    main()
